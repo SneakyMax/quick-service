@@ -1,0 +1,49 @@
+{
+  "name": "service-name-here",
+  "description": "service-description-here",
+  "author": "author-name",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "todo"
+  },
+  "homepage": "todo",
+
+  "main": "build/server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "babel-node tools/run.js build lintAndTest",
+    "start": "node build/server.js",
+    "build-and-run": "babel-node tools/run.js build buildAndRun",
+    "watch": "babel-node tools/run.js build watchWithTests",
+    "watch-server-only": "babel-node tools/run.js build runServerWithWatch",
+    "build-test-and-run": "babel-node tools/run.js build buildTestAndRun",
+    "build-production": "babel-node tools/run.js build build --config config/config.production.json"
+  },
+  "devDependencies": {
+    "babel-eslint": "^5.0.0",
+    "babel-plugin-rewire": "^1.0.0-rc-1",
+    "babel-register": "^6.7.2",
+    "blue-tape": "^0.2.0",
+    "nodemon": "^1.9.1",
+    "snazzy": "^3.0.0",
+    "standard": "^6.0.8",
+    "tap-spec": "^4.1.1"
+  },
+  "dependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2016-node5": "^1.1.2",
+    "chalk": "^1.1.1",
+    "es6-promisify": "^3.0.0",
+    "fs-extra": "^0.26.7",
+    "restify": "^4.0.4",
+    "standard": "^6.0.8"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}

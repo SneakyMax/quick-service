@@ -1,0 +1,16 @@
+{
+  "name": "@asnea/quick-service",
+  "version": "0.1.0",
+  "description": "Somewhat opinionated microservice template",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andy Brenneke",
+  "license": "Unlicense",
+  "bin": {
+    "quick-service": "bin/install.js"
+  },
+  "dependencies": {
+    "fs-extra": "^0.26.7"
+  }
+}
